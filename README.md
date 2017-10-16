@@ -5,18 +5,18 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 ## Back-End
 
-### Node, Express, and MongoDB (Mongoose)
+### Setting up Node, Express, and MongoDB (Mongoose)
 1. Use Express to set up a basic Node server that fetches data from MongoDB
 2. Make sure MongoDB is running (`mongod`), then start your Node server
 
-### TextPost resource
+### Creating TextPost resource
 1. Create a `TextPost` model that contains `title`, `content`, `thumbnail_image_url`, `votes`
 2. Add the following API CRUD routes for `Posts`
     - `/api/posts` – GET, POST
     - `api/posts/:post_id` – GET, PUT, DELETE
 3. Fill out the `Posts` controller using Mongoose queries
 
-### Comment resource
+### Creating Comment resource
 1. Create a `Comment` model that contains `content`, `post_id`, `votes`
 2. Add the following API CRUD routes for `Comments`
     - `/api/posts/:post_id/comments` – GET, POST
@@ -31,18 +31,19 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 ## Front-End
 
-### React
+### Setting up React
 1. Set up a basic React app
 3. Pull in [react-router](https://github.com/ReactTraining/react-router) to implement the following routes
     - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
     - `/posts/:post_id` – Clicking on a post should redirect to its show page (all post content, attached comments, and form for adding comments)
-4. Implement the following user stories
-    - User should see all posts on the home page, ranked in descending order by `votes`
-    - User should be able to click on a "Create Post" button and see a modal to create a new post
-    - User should be able to vote on a post
-    - User should be able to create a `Comment` on a `Post`
-    - User should be able to vote on a `Comment`
-    - User should be able to comment on a comment (requires adding field to `Comment` model)
+    
+### Implementing User Stories
+1. User should see all posts on the home page, ranked in descending order by `votes`
+2. User should be able to click on a "Create Post" button and see a modal to create a new `Post`
+3. User should be able to vote on a post
+4. User should be able to create a `Comment` on a `Post`
+5. User should be able to vote on a `Comment`
+6. User should be able to comment on a comment (requires adding field to `Comment` model)
 
 
 
