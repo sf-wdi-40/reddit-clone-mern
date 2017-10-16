@@ -3,7 +3,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 
 
-## Back-End
+## CREATING THE BACK-END
 
 ### Setting up Node, Express, and MongoDB (Mongoose)
 1. Use Express to set up a basic Node server that fetches data from MongoDB
@@ -29,7 +29,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 
 
-## Front-End
+## CREATING THE FRONT-END
 
 ### Setting up React
 1. Set up a basic React app
