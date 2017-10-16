@@ -2,6 +2,7 @@
 Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo – Express – React – Node) stack.
 
 
+
 ## Back-End
 
 ### Node, Express, and MongoDB (Mongoose)
@@ -40,6 +41,8 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
   - User should be able to click on a "Create Post" button and see a modal to create a new post
   - User should be able to comment on a post
   - User should be able to comment on a comment (requires adding field to `Comment` model)
+
+
 
 ## BONUS
 1. Create a `LinkPost` resource
