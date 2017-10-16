@@ -34,26 +34,26 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 ### React
 1. Set up a basic React app
 3. Pull in [react-router](https://github.com/ReactTraining/react-router) to implement the following routes
-  - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
-  - `/posts/:post_id` – Clicking on a post should redirect to its show page (all post content, attached comments, and form for adding comments)
+    - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
+    - `/posts/:post_id` – Clicking on a post should redirect to its show page (all post content, attached comments, and form for adding comments)
 4. Implement the following user stories
-  - User should see all posts on the home page, ranked in descending order by `votes`
-  - User should be able to click on a "Create Post" button and see a modal to create a new post
-  - User should be able to vote on a post
-  - User should be able to create a `Comment` on a `Post`
-  - User should be able to vote on a `Comment`
-  - User should be able to comment on a comment (requires adding field to `Comment` model)
+    - User should see all posts on the home page, ranked in descending order by `votes`
+    - User should be able to click on a "Create Post" button and see a modal to create a new post
+    - User should be able to vote on a post
+    - User should be able to create a `Comment` on a `Post`
+    - User should be able to vote on a `Comment`
+    - User should be able to comment on a comment (requires adding field to `Comment` model)
 
 
 
 ## BONUS
 1. Create a `LinkPost` resource
-  - Model should contain fields `title`, `link_url`, `thumbnail_image_url`, `votes`
+    - Model should contain fields `title`, `link_url`, `thumbnail_image_url`, `votes`
 2. Create a `User` resource 
-  - Model should contain fields `first_name`, `last_name`, `email`, and `password_hash`
-  - Implement authentication
-  - Both `Post` and `Comment` should have `author_id` (views should include author names)
+    - Model should contain fields `first_name`, `last_name`, `email`, and `password_hash`
+    - Implement authentication
+    - Both `Post` and `Comment` should have `author_id` (views should include author names)
 3. Implement a `SubReddit` model
-  - Should have `name` and `slug` (e.g. 'Software Engineering', 'software-engineering')
-  - `Post` should have a `subreddit_id`
-  - There should be a React route for going to subreddit routes (e.g. `/r/software-engineering`)
+    - Should have `name` and `slug` (e.g. 'Software Engineering', 'software-engineering')
+    - `Post` should have a `subreddit_id`
+    - There should be a React route for going to subreddit routes (e.g. `/r/software-engineering`)
