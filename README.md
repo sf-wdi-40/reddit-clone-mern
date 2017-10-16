@@ -1,5 +1,5 @@
 # Reddit Clone – MERN stack
-Building a Reddit clone using MERN stack
+Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo – Express – React – Node) stack.
 
 
 ## Back-End
