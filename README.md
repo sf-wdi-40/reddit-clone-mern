@@ -33,10 +33,12 @@ Building a Reddit clone using MERN stack
 
 ## BONUS
 1. Create a `LinkPost` resource
+  - Model should contain fields `title`, `link_url`, `thumbnail_image_url`, `votes`
 2. Create a `User` resource 
-  - Should have fields `first_name`, `last_name`, `email`, and `password_hash`
+  - Model should contain fields `first_name`, `last_name`, `email`, and `password_hash`
   - Implement authentication
-  - Both `Post` and `Comment` should have `author_id` (views should also include author names)
+  - Both `Post` and `Comment` should have `author_id` (views should include author names)
 3. Implement a `SubReddit` model
   - Should have `name` and `slug` (e.g. 'Software Engineering', 'software-engineering')
   - `Post` should have a `subreddit_id`
+  - There should be a React route for going to subreddit routes (e.g. `/r/software-engineering`)
