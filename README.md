@@ -2,25 +2,35 @@
 Building a Reddit clone using MERN stack
 
 
-## Back-End: Node, Express, and MongoDB (Mongoose)
+## Back-End
+
+### Node, Express, and MongoDB (Mongoose)
 1. Use Express to set up a basic Node server that fetches data from MongoDB
 2. Make sure MongoDB is running (`mongod`), then start your Node server
-2. Create `TextPost` resource
-  1. Create a `TextPost` model that contains `title`, `content`, `thumbnail_image_url`, `votes`
-  2. Add the following API CRUD routes for `Posts`
+
+### TextPost resource
+1. Create a `TextPost` model that contains `title`, `content`, `thumbnail_image_url`, `votes`
+2. Add the following API CRUD routes for `Posts`
     - `/api/posts` – GET, POST
     - `api/posts/:post_id` – GET, PUT, DELETE
-  3. Fill out the `Posts` controller using Mongoose queries
-4. Create `Comment` resource
-  1. Create a `Comment` model that contains `content`, `post_id`
-  2. Add the following API CRUD routes for `Comments`
+3. Fill out the `Posts` controller using Mongoose queries
+
+### Comment resource
+1. Create a `Comment` model that contains `content`, `post_id`
+2. Add the following API CRUD routes for `Comments`
     - `/api/posts/:post_id/comments` – GET, POST
     - `api/posts/:post_id/comments/:comment_id` – GET, PUT, DELETE
-  3. Fill out the `Comments` controller using Mongoose queries
-5. Use POSTMAN to create a `Post` and a `Comment`
+3. Fill out the `Comments` controller using Mongoose queries
+
+### Verifying Data Creation
+1. Use POSTMAN to create two `Post`s 
+2. Use POSTMAN to create two `Comment`s, both attached to the first `Post` you created
 
 
-## Front-End: React
+
+## Front-End
+
+### React
 1. Set up a basic React app
 3. Pul in React router to implement the following routes
   - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
