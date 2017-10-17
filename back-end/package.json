@@ -1,0 +1,17 @@
+{
+  "name": "reddit-clone-mern",
+  "version": "1.0.0",
+  "description": "Reddit clone using MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.3"
+  }
+}
