@@ -52,6 +52,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
     - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
     - `/posts/:post_id` – Clicking on a post should redirect to its show page (all post content, attached comments, and form for adding comments)
 3. Put in some placeholder text at the above pages to confirm that your React routing is working
+4. Think about the HTTP request library you'd like to use to fetch data from your Node API endpointments (e.g. `$.ajax`, `fetch`, `axios`)
     
 ### Implementing User Stories
 1. User should see all posts on the home page, ranked in descending order by `votes`
