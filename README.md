@@ -14,6 +14,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 5. Take a look around:
     - BACK-END: What routes, models, and controllers have been set up? What kind of database is it connecting to?
     - FRONT-END: What components have been set up?
+6. Install `nodemon` and change your `npm start` for the back-end to run `nodemon server.js`
         
 
 
