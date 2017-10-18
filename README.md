@@ -48,7 +48,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 ## CREATING THE FRONT-END
 
 ### Setting up React
-1. Set up a basic React app
+1. Set up a basic React app – see how you can access your local Node server [here](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/#the-rub-)
 2. Pull in [react-router](https://github.com/ReactTraining/react-router) to implement the following routes
     - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
     - `/posts/:post_id` – Clicking on a post should redirect to its show page (all post content, attached comments, and form for adding comments)
