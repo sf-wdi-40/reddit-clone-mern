@@ -52,6 +52,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
     - run `npm init` in the base of your `reddit-clone-mern/` directory
     - run `npm install concurrently --save`
     - change your `start` script in your new `package.json` directory to be `"start": "concurrently \"cd front-end && npm start\" \"cd back-end && npm start\""`
+    - In your `front-end/package.json`, add a line for your React app to proxy to your Node API: `"proxy": "http://localhost:8080/"`
 2. Pull in [react-router](https://github.com/ReactTraining/react-router) to implement the following routes
     - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
     - `/posts/:post_id` – Clicking on a post should redirect to its show page (all post content, attached comments, and form for adding comments)
