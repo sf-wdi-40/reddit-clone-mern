@@ -49,6 +49,9 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 ### Setting up React
 1. Go to your React app's homepage – research how you can access your local Node server from your React app [here](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/#the-rub-)
+    - run `npm init` in the base of your `reddit-clone-mern/` directory
+    - run `npm install concurrently --save`
+    - change your `start` script in your new `package.json` directory to be `"start": "concurrently \"cd front-end && npm start\" \"cd back-end && npm start\""`
 2. Pull in [react-router](https://github.com/ReactTraining/react-router) to implement the following routes
     - `/` – Should show home dashboard where posts' titles and thumbnail images are displayed
     - `/posts/:post_id` – Clicking on a post should redirect to its show page (all post content, attached comments, and form for adding comments)
