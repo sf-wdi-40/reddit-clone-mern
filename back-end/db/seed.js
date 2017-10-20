@@ -13,17 +13,17 @@ var commentsData = [{
 
 models.Comment.remove({}, function(err, res) {
   if (err) {
-    console.log(err);
+    console.log('Error removing comments: ', err);
     return;
   }
   console.log('Removed all Comments');
 
   models.Comment.create(commentsData, function(err, comments) {
     if (err) {
-      console.log(err);
+      console.log('Error creating comments: ', err);
       return;
     }
-    console.log("Created", comments.length, "comments");
+    console.log('Created', comments.length, 'comments');
     return;
   })
 });
@@ -31,7 +31,7 @@ models.Comment.remove({}, function(err, res) {
 
 models.TextPost.remove({}, function(err, res) {
   if (err) {
-    console.log(err);
+    console.log('Error removing TextPosts', err);
     return;
   }
   console.log('Removed all TextPosts');
@@ -56,10 +56,10 @@ models.TextPost.remove({}, function(err, res) {
     comments: []
   }], function(err, posts) {
     if (err) {
-      console.log(err);
+      console.log('Error creating TextPosts', err);
       return;
     }
-    console.log("Created", posts.length, "posts");
+    console.log('Created', posts.length, 'posts');
     return;
   });
 });
