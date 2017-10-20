@@ -1,0 +1,23 @@
+{
+  "name": "reddit-clone-mern",
+  "version": "1.0.0",
+  "description": "Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo – Express – React – Node) stack.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd front-end && npm start\" \"cd back-end && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sf-wdi-40/reddit-clone-mern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sf-wdi-40/reddit-clone-mern/issues"
+  },
+  "homepage": "https://github.com/sf-wdi-40/reddit-clone-mern#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}

@@ -5,9 +5,9 @@ class TextPost extends Component {
   render() {
     return (
       <div className="TextPost">
-        <p className="TextPost-content">
-          TextPost content
-        </p>
+        <h1>{ this.props.title }</h1>
+        <img src={ this.props.thumbnail_image_url } />
+        <p>{ this.props.content }</p>
       </div>
     );
   }

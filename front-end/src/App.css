@@ -26,3 +26,15 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+button {
+  background-color: lightblue;
+  padding: 5px 7px;
+  border-radius: 3px;
+  border: 1px solid lightblue;
+}
+
+button:hover {
+  background-color: lightgray;
+  border: 1px solid gray;
+}
