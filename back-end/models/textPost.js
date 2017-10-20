@@ -7,10 +7,15 @@ var TextPostSchema = new Schema({
   content: String,
   thumbnail_image_url: String,
   votes: Number,
-  updatedAt: new Date(),
-  comments: [CommentSchema]
+  comments: [CommentSchema],
+  updated_at: Date
 });
 
 var TextPost = mongoose.model('TextPost', TextPostSchema);
+
+TextPostSchema.pre('save', function(next) {
+  this.updated_at = Date.now();
+  next();
+});
 
 module.exports = TextPost;
