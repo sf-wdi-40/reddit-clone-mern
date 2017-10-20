@@ -2,13 +2,6 @@ var models = require('../models');
 var Comment = models.Comment;
 var TextPost = models.TextPost;
 
-function index(req, res) {
-  Comment.find({ post_id: req.params.post_id }, function(err, comments) {
-    if (err) res.send(err);
-    else res.json(comments);
-  });
-}
-
 function create(req, res) {
   Comment.create(req.body, function(err, comment){
     if (err) res.end(err);
@@ -34,6 +27,5 @@ function update(req, res) {
   });
 }
 
-module.exports.index = index;
 module.exports.create = create;
 module.exports.update = update;

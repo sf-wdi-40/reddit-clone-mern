@@ -11,7 +11,6 @@ router.put('/api/posts/:post_id', textPostsController.update);
 router.delete('/api/posts/:post_id', textPostsController.destroy);
 
 //Comment Routes
-router.get('/api/posts/:post_id/comments', commentsController.index);
 router.post('/api/posts/:post_id/comments', commentsController.create);
 router.put('/api/comments/:comment_id', commentsController.update);
 module.exports = router;
