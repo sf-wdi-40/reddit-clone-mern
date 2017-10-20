@@ -30,7 +30,7 @@ class PostsContainer extends Component {
   sortAndSetPosts(posts) {
     let sortedPosts = posts.sort((a, b) => {
       if (a.votes === b.votes) { 
-        return a.updated_at < b.updated_at ? 1 : -1;
+        return a.updatedAt < b.updatedAt ? 1 : -1;
       }
       return a.votes < b.votes ? 1 : -1;
     });

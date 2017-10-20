@@ -10,7 +10,7 @@ class TextPostLink extends Component {
     return (
       <div className="TextPostLink">
         <div>
-          <div>{ votes } Votes</div>
+          <div>{ `${ votes } ${ votesLabel }` }</div>
           <button onClick={ this.props.vote(this.props._id, votes + 1) }>Upvote</button>
           <button onClick={ this.props.vote(this.props._id, votes - 1) }>Downvote</button>
         </div>
