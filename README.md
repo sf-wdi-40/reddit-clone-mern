@@ -21,21 +21,21 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 ## CREATING THE BACK-END
 
 ### Creating TextPost resource
-1. Create a `TextPost` model that contains `title`, `content`, `thumbnail_image_url`, `votes`
+1. Create a `TextPost` model that contains `title`, `content`, `thumbnail_image_url`, `votes`, `comments` (`comments` should be an array of (embedded)[https://github.com/SF-WDI-LABS/mongoose-associations] `Comment` models)
 2. Add the following API CRUD routes for `Posts`
     - `/api/posts` – GET, POST
     - `/api/posts/:post_id` – GET, PUT, DELETE
 3. Fill out the `Posts` controller using Mongoose queries
-4. Use POSTMAN or the `seed.js` file to create a `Post` – verify that it shows up at the appropriate endpoint
+4. Add to your `seed.js` file to create a `Post` – verify that it shows up at the appropriate endpoint
 5. Use POSTMAN to confirm that the other CRUD routes are working as well (PUT, DELETE)
 
 ### Creating Comment resource
-1. Create a `Comment` model that contains `content`, `post_id`, `votes`
+1. Create a `Comment` model that contains `content`, `votes`
 2. Add the following API CRUD routes for `Comments`
-    - `/api/posts/:post_id/comments` – GET, POST
+    - `/api/posts/:post_id/comments` – POST
     - `/api/posts/:post_id/comments/:comment_id` – GET, PUT, DELETE
 3. Fill out the `Comments` controller using Mongoose queries
-4. Use POSTMAN or the `seed.js` file to create a `Comment`, attached to a `Post` you've created – verify that it shows up at the appropriate endpoint
+4. Add to your `seed.js` file to create a `Comment`, attached to a `Post` you've created – verify that it shows up at the appropriate endpoint
 5. Use POSTMAN to confirm that the other CRUD routes are working as well (PUT, DELETE)
 
 ### Verifying Data Creation
