@@ -1,11 +1,18 @@
 var models = require('../models');
 var Comment = models.Comment;
 
-function index(req, res) {
-  Comment.find({ post_id: req.params.post_id }, function(err, comments) {
-    if (err) res.send(err);
-    else res.json(comments);
-  });
+function create(req, res) {
+  
 }
 
-module.exports.index = index;
+function update(req, res) {
+
+}
+
+function destroy(req, res) {
+
+}
+
+module.exports.create = create;
+module.exports.update = update;
+module.exports.destroy = destroy;

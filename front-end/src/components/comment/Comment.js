@@ -4,11 +4,9 @@ import './Comment.css';
 class Comment extends Component {
   render() {
     return (
-      <div className="Comment">
-        <p className="Comment-content">
-          Comment content
-        </p>
-      </div>
+      <p className="Comment">
+	      Comment content
+      </p>
     );
   }
 }
